@@ -1,0 +1,10 @@
+{
+  "tickersOrCiks": [
+    "AAPL"
+  ],
+  "secContactEmail": "your-contact@example.com",
+  "lookbackDays": 90,
+  "clusterWindowDays": 5,
+  "minOwnershipFilingsForCluster": 3,
+  "concurrency": 1
+}

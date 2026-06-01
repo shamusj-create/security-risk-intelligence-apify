@@ -1,0 +1,10 @@
+{
+  "companies": [
+    "stripe.com"
+  ],
+  "secContactEmail": "your-contact@example.com",
+  "includeGithub": true,
+  "includeHackerNews": true,
+  "maxSecFilings": 2,
+  "concurrency": 1
+}

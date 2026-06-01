@@ -1,0 +1,13 @@
+{
+  "name": "security-risk-intelligence-apify-examples",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "Public examples for the Security Risk Intelligence Suite on Apify.",
+  "scripts": {
+    "run-suite": "node examples/run-suite.js"
+  },
+  "dependencies": {
+    "apify-client": "^2.16.0"
+  }
+}

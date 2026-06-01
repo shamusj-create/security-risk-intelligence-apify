@@ -1,0 +1,16 @@
+{
+  "pypiPackageVersions": [
+    "requests==2.31.0"
+  ],
+  "requirementsText": "flask==2.2.2\nurllib3==1.26.18",
+  "dockerfileText": "FROM redis:7.2",
+  "packageLockJson": {
+    "dependencies": {
+      "lodash": {
+        "version": "4.17.20"
+      }
+    }
+  },
+  "includeNvdKeywordSearch": false,
+  "concurrency": 1
+}
