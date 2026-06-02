@@ -1,8 +1,15 @@
 # Security Risk Intelligence Suite for Apify
 
-Practical examples for running a three-Actor Apify suite that turns public package, container, company, and filing data into structured risk intelligence datasets.
+Run repeatable vendor due-diligence checks with Apify: SBOM and package risk, Docker image risk, SEC filing red flags, and startup funding or traction signals.
 
-The suite is designed for vendor due diligence, procurement review, security triage, investor research, B2B lead qualification, and repeatable public-data monitoring.
+This repository contains copy-paste inputs, tutorials, and JavaScript examples for a three-Actor suite that turns public package, container, company, and filing data into structured risk intelligence datasets.
+
+Use it if you need to:
+
+- Audit a vendor lockfile, SBOM, package list, or Dockerfile.
+- Monitor public vendors for SEC filing red flags.
+- Enrich startup domains with funding and traction signals.
+- Export structured rows into a spreadsheet, GRC queue, CRM, or internal dashboard.
 
 ## Actors
 
@@ -14,6 +21,7 @@ If an Actor link is not visible yet, the Actor has not been published to Apify S
 
 ## Start Here
 
+- [How to automate vendor and dependency risk checks with Apify](docs/vendor-risk-automation-with-apify.md)
 - [OSS supply-chain risk API tutorial](docs/oss-supply-chain-risk-api.md)
 - [SEC filing red-flag API tutorial](docs/sec-filing-red-flag-api.md)
 - [Startup funding signals API tutorial](docs/startup-funding-signals-api.md)
