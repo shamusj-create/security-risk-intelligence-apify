@@ -2,6 +2,12 @@
 
 Run repeatable vendor due-diligence checks with Apify: SBOM and package risk, Docker image risk, SEC filing red flags, and startup funding or traction signals.
 
+Try on Apify:
+
+- [OSS Supply Chain Risk Report](https://apify.com/changeable_peddler/oss-supply-chain-risk-report)
+- [SEC Red Flag Monitor](https://apify.com/changeable_peddler/sec-red-flag-monitor)
+- [Startup Funding Signal Report](https://apify.com/changeable_peddler/startup-funding-signal-report)
+
 This repository contains copy-paste inputs, tutorials, and JavaScript examples for a three-Actor suite that turns public package, container, company, and filing data into structured risk intelligence datasets.
 
 Use it if you need to:
