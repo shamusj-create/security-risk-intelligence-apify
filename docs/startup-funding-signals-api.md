@@ -43,6 +43,8 @@ apify call changeable_peddler/startup-funding-signal-report --input-file example
 - `metrics.domainAgeDays`: domain age signal.
 - `disambiguation`: query stem, domain, SEC query, and matched Form D entities.
 
+See a compact example row in [sample outputs and case studies](sample-outputs-and-case-studies.md#startup-funding-signal-report).
+
 ## Buyer Workflows
 
 - lead scoring

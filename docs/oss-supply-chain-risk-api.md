@@ -46,6 +46,8 @@ apify call changeable_peddler/oss-supply-chain-risk-report --input-file examples
 - `disambiguation`: package/image source, requested version, analyzed version, and latest version.
 - `highlights`: vulnerability, package, or registry evidence.
 
+See a compact example row in [sample outputs and case studies](sample-outputs-and-case-studies.md#oss-supply-chain-risk-report).
+
 ## Buyer Workflows
 
 - vendor security questionnaire review

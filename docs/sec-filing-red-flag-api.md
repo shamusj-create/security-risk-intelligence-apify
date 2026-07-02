@@ -43,6 +43,8 @@ apify call changeable_peddler/sec-red-flag-monitor --input-file examples/sec-red
 - `highlights`: specific filing evidence.
 - `disambiguation`: resolved ticker, CIK, and company name.
 
+See a compact example row in [sample outputs and case studies](sample-outputs-and-case-studies.md#sec-red-flag-monitor).
+
 ## Buyer Workflows
 
 - public vendor watchlists

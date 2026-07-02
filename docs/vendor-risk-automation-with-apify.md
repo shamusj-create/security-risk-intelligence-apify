@@ -76,6 +76,8 @@ Common review flow:
 3. Run Startup Funding Signal Report for startup or private-company targets.
 4. Sort rows by `score`, review `confidence`, then read `summary` and `recommendations`.
 
+For compact example rows, see [sample outputs and case studies](sample-outputs-and-case-studies.md).
+
 ## Example use cases
 
 - Vendor due diligence before a security questionnaire.
