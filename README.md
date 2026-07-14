@@ -10,7 +10,14 @@ Try on Apify:
 
 This repository contains copy-paste inputs, tutorials, and JavaScript examples for a three-Actor suite that turns public package, container, company, and filing data into structured risk intelligence datasets.
 
-See the proof artifact first: [sample outputs and case studies](docs/sample-outputs-and-case-studies.md).
+See the proof first: [controlled OSS live-run artifact](examples/live/oss-supply-chain-risk-report.json) and [sample outputs and case studies](docs/sample-outputs-and-case-studies.md). The live artifact shows successful execution and output shape; it is not customer usage.
+
+Run one bounded example:
+
+```bash
+npm install
+APIFY_TOKEN=your_token_here npm run run-suite -- --actor oss-supply-chain-risk-report
+```
 
 Use it if you need to:
 
@@ -42,6 +49,11 @@ If an Actor link is not visible yet, the Actor has not been published to Apify S
 - [SEC red-flag watchlist input](examples/sec-red-flags-input.json)
 - [Startup funding signal input](examples/startup-funding-input.json)
 
+## Controlled Live Output
+
+- [OSS supply-chain risk report](examples/live/oss-supply-chain-risk-report.json)
+- [Live-proof manifest](examples/live/manifest.json)
+
 ## JavaScript Example
 
 Install dependencies:
@@ -54,6 +66,13 @@ Run the suite:
 
 ```bash
 APIFY_TOKEN=your_token_here npm run run-suite
+```
+
+List or run one Actor:
+
+```bash
+npm run run-suite -- --list
+APIFY_TOKEN=your_token_here npm run run-suite -- --actor oss-supply-chain-risk-report
 ```
 
 The script in [examples/run-suite.js](examples/run-suite.js) calls the three Actors, reads their datasets, and prints a compact summary with `input`, `status`, `score`, `confidence`, and `summary`.

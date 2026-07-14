@@ -1,0 +1,11 @@
+{
+    "generatedAt": "2026-07-14",
+    "label": "Controlled demonstration. This artifact proves output shape and successful execution; it is not customer usage.",
+    "actors": [
+        {
+            "actor": "oss-supply-chain-risk-report",
+            "runId": "4IPuhVQAQdNqZdfty",
+            "artifact": "oss-supply-chain-risk-report.json"
+        }
+    ]
+}

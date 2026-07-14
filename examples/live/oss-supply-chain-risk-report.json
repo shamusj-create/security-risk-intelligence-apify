@@ -1,0 +1,146 @@
+{
+    "generatedAt": "2026-07-14T12:03:38.646Z",
+    "label": "Controlled demonstration. This is product proof, not customer usage.",
+    "actor": "oss-supply-chain-risk-report",
+    "runId": "4IPuhVQAQdNqZdfty",
+    "startedAt": "2026-07-07T11:11:18.923Z",
+    "status": "SUCCEEDED",
+    "datasetItemCount": 13,
+    "items": [
+        {
+            "input": "requests",
+            "reportType": "oss-supply-chain-risk-report",
+            "status": "ANALYZED",
+            "score": 0,
+            "confidence": 80,
+            "summary": "requests: analyzed 2.34.2, latest 2.34.2, 0 OSV vuln(s), 0 recent NVD keyword match(es).",
+            "recommendations": [
+                "No major package-risk signal detected in this bounded audit."
+            ],
+            "highlights": [],
+            "disambiguation": {
+                "ecosystem": "PyPI",
+                "packageName": "requests",
+                "requestedVersion": null,
+                "analyzedVersion": "2.34.2",
+                "latestVersion": "2.34.2",
+                "componentSource": "pypiPackages"
+            },
+            "metrics": {
+                "ecosystem": "PyPI",
+                "componentSource": "pypiPackages",
+                "versionAnalyzed": "2.34.2",
+                "latestVersion": "2.34.2",
+                "latestUpload": "2026-05-14T19:25:27.735762Z",
+                "daysSinceLatestUpload": 53,
+                "osvVulnerabilities": 0,
+                "currentVersionAffected": false,
+                "upgradeAvailable": false,
+                "nvdKeywordMatches": 0,
+                "requiresPython": ">=3.10",
+                "license": "Apache-2.0",
+                "projectUrl": "https://pypi.org/project/requests/"
+            },
+            "checkedAt": "2026-07-07T11:11:21.047Z"
+        },
+        {
+            "input": "django",
+            "reportType": "oss-supply-chain-risk-report",
+            "status": "ANALYZED",
+            "score": 0,
+            "confidence": 80,
+            "summary": "django: analyzed 6.0.6, latest 6.0.6, 0 OSV vuln(s), 0 recent NVD keyword match(es).",
+            "recommendations": [
+                "No major package-risk signal detected in this bounded audit."
+            ],
+            "highlights": [],
+            "disambiguation": {
+                "ecosystem": "PyPI",
+                "packageName": "django",
+                "requestedVersion": null,
+                "analyzedVersion": "6.0.6",
+                "latestVersion": "6.0.6",
+                "componentSource": "pypiPackages"
+            },
+            "metrics": {
+                "ecosystem": "PyPI",
+                "componentSource": "pypiPackages",
+                "versionAnalyzed": "6.0.6",
+                "latestVersion": "6.0.6",
+                "latestUpload": "2026-06-03T13:02:46.503360Z",
+                "daysSinceLatestUpload": 33,
+                "osvVulnerabilities": 0,
+                "currentVersionAffected": false,
+                "upgradeAvailable": false,
+                "nvdKeywordMatches": 0,
+                "requiresPython": ">=3.12",
+                "license": "BSD-3-Clause",
+                "projectUrl": "https://pypi.org/project/Django/"
+            },
+            "checkedAt": "2026-07-07T11:11:21.422Z"
+        },
+        {
+            "input": "requests==2.31.0",
+            "reportType": "oss-supply-chain-risk-report",
+            "status": "ANALYZED",
+            "score": 100,
+            "confidence": 95,
+            "summary": "requests: analyzed 2.31.0, latest 2.34.2, 3 OSV vuln(s), 0 recent NVD keyword match(es).",
+            "recommendations": [
+                "Review OSV vulnerabilities affecting the analyzed version before adding or upgrading this dependency.",
+                "Upgrade available: compare the analyzed version with the latest PyPI release.",
+                "Package appears stale; inspect maintainer activity and release history."
+            ],
+            "highlights": [
+                {
+                    "type": "OSV",
+                    "id": "GHSA-9hjg-9r4m-mvj7",
+                    "summary": "Requests vulnerable to .netrc credentials leak via malicious URLs",
+                    "aliases": [
+                        "CVE-2024-47081"
+                    ]
+                },
+                {
+                    "type": "OSV",
+                    "id": "GHSA-9wx4-h78v-vm56",
+                    "summary": "Requests `Session` object does not verify requests after making first request with verify=False",
+                    "aliases": [
+                        "CVE-2024-35195"
+                    ]
+                },
+                {
+                    "type": "OSV",
+                    "id": "GHSA-gc5v-m9x4-r6x2",
+                    "summary": "Requests has Insecure Temp File Reuse in its extract_zipped_paths() utility function",
+                    "aliases": [
+                        "CVE-2026-25645"
+                    ]
+                }
+            ],
+            "disambiguation": {
+                "ecosystem": "PyPI",
+                "packageName": "requests",
+                "requestedVersion": "2.31.0",
+                "analyzedVersion": "2.31.0",
+                "latestVersion": "2.34.2",
+                "componentSource": "input"
+            },
+            "metrics": {
+                "ecosystem": "PyPI",
+                "componentSource": "input",
+                "versionAnalyzed": "2.31.0",
+                "latestVersion": "2.34.2",
+                "latestUpload": "2023-05-22T15:12:44.175995Z",
+                "daysSinceLatestUpload": 1141,
+                "osvVulnerabilities": 3,
+                "currentVersionAffected": true,
+                "upgradeAvailable": true,
+                "nvdKeywordMatches": 0,
+                "requiresPython": ">=3.10",
+                "license": "Apache-2.0",
+                "projectUrl": "https://pypi.org/project/requests/"
+            },
+            "checkedAt": "2026-07-07T11:11:21.634Z"
+        }
+    ]
+}

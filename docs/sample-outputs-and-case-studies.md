@@ -4,6 +4,10 @@ These shortened examples show the dataset shape a buyer gets back from the Secur
 
 The values below are illustrative demo values for showing output structure. Use live Actor runs for current evidence.
 
+## Controlled live-run proof
+
+The [OSS supply-chain live output](../examples/live/oss-supply-chain-risk-report.json) is a sanitized artifact from a successful controlled run. SEC and startup examples below remain illustrative until a production run can use a legitimate SEC contact address. None of these examples represent customer usage.
+
 ## Case study: vendor intake triage
 
 A procurement or security team can run the suite against a vendor packet:
