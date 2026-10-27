@@ -1,0 +1,6 @@
+{
+  "mode": "LOOKUP",
+  "locationIds": ["1-13361514096"],
+  "maxLocationsToCheck": 1,
+  "maxProviders": 1
+}
