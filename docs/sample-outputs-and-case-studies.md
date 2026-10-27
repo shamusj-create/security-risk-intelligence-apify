@@ -1,22 +1,22 @@
-# Sample outputs and case studies
+# Sample outputs and worked examples
 
-These shortened examples show the dataset shape a buyer gets back from the Security Risk Intelligence Suite. Real runs include the same top-level fields, plus larger `highlights`, `metrics`, `sources`, and `checkedAt` payloads.
+These shortened examples show selected fields from the three company/software Actors. They are illustrations for inspecting format before a paid run, not current assessments or customer case studies. The independent CQC product has a different schema in its [care-provider export guide](cqc-care-home-report-links-csv.md).
 
-The values below are illustrative demo values for showing output structure. Use live Actor runs for current evidence.
+Requesting fresh data can incur fees even when a source fails, so inspect current pricing and the completed run before you repeat it.
 
-## Controlled live-run proof
+## Recorded owner-test artifact
 
-The [OSS supply-chain live output](../examples/live/oss-supply-chain-risk-report.json) is a sanitized artifact from a successful controlled run. SEC and startup examples below remain illustrative until a production run can use a legitimate SEC contact address. None of these examples represent customer usage.
+The [historical OSS output](../examples/live/oss-supply-chain-risk-report.json) records a controlled owner test. Its original run could not be retrieved during the 27 October 2026 review, so the saved artifact is not independently retrievable live-run proof or current vulnerability evidence. SEC and startup examples below remain illustrative; no legitimate SEC contact was disclosed for a live verification. None represents customer usage.
 
-## Case study: vendor intake triage
+## Worked example: vendor intake triage
 
-A procurement or security team can run the suite against a vendor packet:
+A procurement or security team could select the relevant check for a vendor packet:
 
 - Run OSS Supply Chain Risk Report on the supplied SBOM, lockfile, package list, or Dockerfile.
 - Run SEC Red Flag Monitor when the vendor, parent, customer, or acquisition target is public.
 - Run Startup Funding Signal Report when the company is private or startup-like.
 
-The shared fields make the output easy to combine: `input`, `status`, `score`, `confidence`, `summary`, `recommendations`, `highlights`, `metrics`, and `disambiguation`.
+The shared field names help organise rows, but their heuristic scores measure different things and should not be combined into a single risk probability. These attempted reports can be billed even when sources return an error. Review source availability and resolved identity before interpreting any score.
 
 ## OSS Supply Chain Risk Report
 
@@ -104,7 +104,7 @@ Use this when the buyer needs a public-company watchlist row rather than manuall
 }
 ```
 
-Buyer takeaway: the Actor converts restatements, late filings, executive changes, restructuring items, and insider-filing clusters into a sortable monitoring row.
+Buyer takeaway: the Actor flags filing patterns for manual review. An ownership-filing cluster does not establish insider buying or transaction direction, and a filing flag does not prove wrongdoing. The invented company above is not a real assessment.
 
 Try it on Apify: [SEC Red Flag Monitor](https://apify.com/changeable_peddler/sec-red-flag-monitor).
 
@@ -162,7 +162,7 @@ Use this when the buyer has a list of startup domains and needs funding or tract
 }
 ```
 
-Buyer takeaway: the Actor joins SEC Form D evidence, developer-market attention, GitHub activity, and domain signals into a single company research row.
+Buyer takeaway: the Actor joins possible source matches into a research row. Verify company identity and deduplicate amendments before interpreting Form D amounts. Mentions and repository activity do not establish revenue, funding success or product-market fit. The company above is invented.
 
 Try it on Apify: [Startup Funding Signal Report](https://apify.com/changeable_peddler/startup-funding-signal-report).
 

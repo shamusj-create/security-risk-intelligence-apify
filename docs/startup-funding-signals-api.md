@@ -1,17 +1,10 @@
-# Startup Funding Signals API With Apify
+# Investigate Form D and developer signals for a company domain
 
-Startup Funding Signal Report turns public company and domain signals into a structured startup research row.
+Use [Startup Funding Signal Report](https://apify.com/changeable_peddler/startup-funding-signal-report) to assemble public clues for a company-research queue. It searches for possible SEC Form D matches and can add available GitHub, Hacker News and domain-registration signals. A domain-derived name is a search starting point, not verified company identity.
 
-Use it when you need to enrich:
+## Check one company first
 
-- CRM company domains
-- conference attendee lists
-- accelerator or cohort lists
-- investor research targets
-- B2B lead queues
-- early vendor review queues
-
-## Example Input
+Start with the [one-domain template](../examples/startup-funding-input.json), then supply a real contact email you are authorised to use for SEC fair-access requests:
 
 ```json
 {
@@ -24,31 +17,16 @@ Use it when you need to enrich:
 }
 ```
 
-Use a real contact email for SEC fair-access identification.
+The placeholder is not a production identity. The completed address is sent to SEC in request identification, so keep your input private and out of public tasks or repositories. Replace the domain with the company you need to investigate.
 
-## CLI
+Review the Pricing tab in Apify Console and set a limit for one company report. Each attempted company report is billed, including an `API_ERROR` row. Inspect the existing output and `RUN_SUMMARY` before retrying: an upstream failure is not a valid zero-signal assessment.
 
-```bash
-apify call changeable_peddler/startup-funding-signal-report --input-file examples/startup-funding-input.json --output-dataset
-```
+## Verify the match before enriching a CRM
 
-## What To Review
+Read `disambiguation` and the matched entities before interpreting any funding total. Similar names can identify the wrong company, and a domain is not a registry identity. Check the original filings, dates and entity details rather than accepting the summary as a verified funding event.
 
-- `score`: normalized signal score.
-- `confidence`: confidence in company/domain resolution.
-- `summary`: funding and traction overview.
-- `metrics.formDFilings`: matching Form D filings.
-- `metrics.hnMentions`: Hacker News mention count.
-- `metrics.githubPublicRepos`: public GitHub repository count.
-- `metrics.domainAgeDays`: domain age signal.
-- `disambiguation`: query stem, domain, SEC query, and matched Form D entities.
+A Form D filing concerns an offering; it does not necessarily establish a completed funding round or today's capital position. Amendments and overlapping matches need deduplication before you sum amounts. Missing filings do not prove that a company is unfunded or illegitimate.
 
-See a compact example row in [sample outputs and case studies](sample-outputs-and-case-studies.md#startup-funding-signal-report).
+GitHub activity and Hacker News mentions are public attention or development clues, not verified revenue, customers or product-market fit. The score is a heuristic for deciding what to research next. See the [illustrative output](sample-outputs-and-case-studies.md#startup-funding-signal-report) for fields, not a customer case study or live proof of coverage.
 
-## Buyer Workflows
-
-- lead scoring
-- market mapping
-- investor research
-- startup vendor review
-- public traction enrichment for CRM rows
+Save source links and retrieval dates with the review. This Actor creates no outreach, monitoring schedule or alerts, and its output is not investment advice.

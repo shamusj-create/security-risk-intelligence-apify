@@ -1,0 +1,5 @@
+{
+  "pypiPackageVersions": ["requests==2.31.0"],
+  "includeNvdKeywordSearch": false,
+  "concurrency": 1
+}

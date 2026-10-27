@@ -1,6 +1,6 @@
 {
     "generatedAt": "2026-07-14",
-    "label": "Controlled demonstration. This artifact proves output shape and successful execution; it is not customer usage.",
+    "label": "Recorded historical owner-test output, not customer usage or current evidence. The original run was not retrievable during the 27 October 2026 review.",
     "actors": [
         {
             "actor": "oss-supply-chain-risk-report",

@@ -1,51 +1,17 @@
-# Vendor Due-Diligence Workflow With Apify
+# Hand off public-source findings for vendor review
 
-This workflow combines the three Security Risk Intelligence Suite Actors into a repeatable public-data review.
+Choose the relevant check from the [vendor research selector](vendor-risk-automation-with-apify.md), then export its dataset into your existing review queue. The three company/software Actors are independent tools; running all three is neither required nor always relevant.
 
-## Step 1: Check Dependencies
+## Make the record traceable
 
-Run OSS Supply Chain Risk Report with dependency evidence from a vendor security packet:
+For each finding, preserve the supplied `input`, `status` and `checkedAt`. Add the resolved identity from `disambiguation` and the supporting records from `highlights` or `metrics`. Keep the source URL with any note that a reviewer will need to verify.
 
-- `requirements.txt`
-- package-lock JSON
-- Dockerfile
-- SBOM JSON
-- specific PyPI package versions
+Start with identity and source availability. A company-name match can be wrong, a filing can have an amendment, and a package name can refer to a different ecosystem. An `API_ERROR` row is not a clean assessment; check the run before retrying because attempted reports are billed.
 
-Review `score`, `confidence`, affected versions, upgrade availability, and component disambiguation.
+## Keep different conclusions separate
 
-## Step 2: Check Public Companies
+A dependency's affected-version evidence is different from a filing-type flag or a startup's public mention count. Use separate columns for those findings rather than summing their heuristic scores into a single vendor-risk number.
 
-If the vendor or parent company is public, run SEC Red Flag Monitor with its ticker or CIK.
+Assign a reviewer and a next action based on the actual evidence. That might mean opening an advisory, reading a filing or resolving an ambiguous company match. The [worked examples](sample-outputs-and-case-studies.md) show field shapes, not observed customer outcomes.
 
-Review restatements, late filings, executive changes, restructuring items, and ownership filing clusters.
-
-## Step 3: Check Startup Signals
-
-If the vendor is private or startup-like, run Startup Funding Signal Report with its domain.
-
-Review Form D evidence, Hacker News mentions, GitHub activity, domain age, and disambiguation metadata.
-
-## Step 4: Export Results
-
-Export each Apify dataset as JSON, CSV, or Excel and combine the rows in:
-
-- a spreadsheet
-- a procurement queue
-- a GRC tool
-- a CRM enrichment workflow
-- a custom risk dashboard
-
-## Fields To Standardize
-
-Across all three Actors, normalize these fields first:
-
-- `input`
-- `status`
-- `score`
-- `confidence`
-- `summary`
-- `recommendations`
-- `metrics`
-- `disambiguation`
-- `checkedAt`
+Export JSON when you need nested evidence, or select the relevant fields for a spreadsheet. These example guides do not create alerts, contact companies or automate a consequential decision. The independent CQC product uses a different schema; follow its [care-provider export guide](cqc-care-home-report-links-csv.md) instead.
