@@ -2,7 +2,9 @@
 
 Choose a tool for the record you need to review: a software dependency, a public-company filing, a startup's public signals or a care provider's CQC report links. These are independent products. You do not need to run or purchase them together.
 
-For privacy-policy evidence, legal identifiers, declared AI-crawler rules or developer documentation, use the [website evidence check selector](docs/website-evidence-checks.md) to choose one public tool and review its limits and fees.
+For privacy policies, contract clauses, trust-centre claims, disclosure contacts, cookie-tool mentions, legal identifiers or developer resources, use the [website evidence check selector](docs/website-evidence-checks.md). It also covers SaaS price strings, company career-page hiring signals and newsroom contact research. Choose the check that fits your question and review its limits and fees.
+
+Preparing a recruiting-research spreadsheet? The [career-page jobs and hiring-signals guide](docs/company-career-page-jobs-hiring-signals.md) shows a small input and the fields to keep for manual vacancy review.
 
 ## Choose a research task
 
@@ -42,3 +44,5 @@ Always supply `--actor` when using the runner, because omitting it runs all thre
 For the original three products, inspect `status` and `disambiguation` before relying on `score`. Read the supporting source records in `highlights` and `metrics`; a heuristic score is not a probability of loss, wrongdoing or commercial success. CQC has a different, provider-grouped schema described in its guide.
 
 Export only the fields your review needs and preserve the source links and retrieval date. The [vendor review selector](docs/vendor-risk-automation-with-apify.md) helps choose the relevant check, while the [handoff guide](docs/vendor-due-diligence-workflow.md) covers keeping findings separate in a review queue. These examples create no schedules, alerts or outreach.
+
+For keyword demand, competitor Google ads, Google Shopping prices or Google Play keyword results, see the separate [SEO, ads and app research tools](https://github.com/shamusj-create/seo-dataforseo-apify#choose-a-task). Their provider-backed reports answer different questions from these public-website checks.
