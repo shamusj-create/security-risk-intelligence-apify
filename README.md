@@ -32,12 +32,14 @@ For the three company/software Actors, the [JavaScript runner](examples/run-suit
 ```bash
 npm install
 npm run run-suite -- --list
-APIFY_TOKEN=your_token_here npm run run-suite -- --actor oss-supply-chain-risk-report
+npm run run-suite -- --actor oss-supply-chain-risk-report --preview
+# With APIFY_TOKEN set privately:
+npm run run-suite -- --actor oss-supply-chain-risk-report
 ```
 
-Review the runner's selected input before using that command: its original OSS example contains several components. For a smaller first check, use the [single-package input](examples/oss-single-package-input.json) in Console and keep your token private.
+Listing and previewing work without a token and start nothing. The OSS example uses [one pinned package](examples/oss-single-package-input.json) with a $0.02 Apify run charge limit. Review current pricing, including any separate platform usage. To choose a different run limit, pass `--max-usd` with a positive amount. The runner starts only the selected Actor and shows its run ID and up to three output rows.
 
-Always supply `--actor` when using the runner, because omitting it runs all three original examples and can incur several fees. The runner sets no per-run spending cap and does not include CQC; use Console when you want an explicit maximum before execution. Listing the available names does not start an Actor.
+For either SEC-backed example, set `SEC_CONTACT_EMAIL` privately to a real address you are authorised to use. The runner adds it to that request without editing the public template. CQC has its own [Console example](docs/cqc-care-home-report-links-csv.md).
 
 ## Use the evidence in your own review
 
