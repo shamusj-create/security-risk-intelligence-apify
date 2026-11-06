@@ -6,6 +6,8 @@ For privacy policies, contract clauses, trust-centre claims, disclosure contacts
 
 Preparing a recruiting-research spreadsheet? The [career-page jobs and hiring-signals guide](docs/company-career-page-jobs-hiring-signals.md) shows a small input and the fields to keep for manual vacancy review.
 
+Use these Actors from an AI assistant with the [AI chat setup and task catalog](https://github.com/shamusj-create/seo-dataforseo-apify/blob/main/docs/use-apify-actors-in-ai-chat.md). It covers public website evidence, filing research, software dependencies and CQC report links.
+
 ## Choose a research task
 
 | Your task | Actor and guide | Billing unit | Small input |
