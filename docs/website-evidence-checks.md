@@ -16,6 +16,20 @@ Use these checks to collect material for a human review. Published language and 
 
 Terms matches are starting points for a clause review, not conclusions about enforceability. Trust-centre matches record published claims, not verified certifications. The cookie check does not execute scripts or click a banner, so it cannot establish whether a tracker fires before consent.
 
+### Turn trust-page results into a vendor evidence register
+
+Start with the vendor's public trust page. For one website, budget $0.002 for the attempt and $0.006 for a qualifying report. Check the current rates and enter one URL. [Trust Center input](https://apify.com/changeable_peddler/trust-center-compliance-extractor/input) · [Pricing](https://apify.com/changeable_peddler/trust-center-compliance-extractor/pricing)
+
+Here is a worked example from three simulated responses for a fictional vendor.
+
+| What the Actor returned | What to record | Next step |
+|---|---|---|
+| A `soc2` finding on `vendor.example/trust` | The vendor's public page mentions a SOC 2 audit. | Request the report and verify its scope and period. |
+| A `dpa` finding on `vendor.example/legal/dpa` | The vendor publishes a data processing addendum reference. | Open the document and check which services it covers. |
+| HTTP 403 for `vendor.example/trust/soc2-report` | The report could not be accessed. | Use the vendor's authorized request process. |
+
+The overall status is `FOUND` in this example. Use `findings` for matched evidence, `errors` for failed requests and `coverage` for crawl limits. A URL in `sourceUrls` can represent a failed request. Keep the claim, source link, retrieval date and verification status in separate columns.
+
 ## Find public technical resources
 
 Choose these when the task concerns declared crawler policies or resources for an integration.
