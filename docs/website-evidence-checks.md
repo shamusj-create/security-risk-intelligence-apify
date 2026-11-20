@@ -42,6 +42,17 @@ Choose these when the task concerns declared crawler policies or resources for a
 
 Security.txt evidence does not establish permission to test a website or complete RFC 9116 conformance. API-like links still need access and contract checks before an integration.
 
+### Make an API integration shortlist
+
+Start at the service's public developer page and look for `extracted.apiArtifacts`. A fictional offline developer page with links labelled “OpenAPI specification” and “Webhook guide” produces this resource list.
+
+| Resource label | Returned URL | Next step |
+|---|---|---|
+| OpenAPI specification | `https://example.com/spec/openapi.json` | Open the candidate specification and verify its version and access requirements. |
+| Webhook guide | `https://example.com/docs/webhooks` | Read the event definitions and authentication instructions. |
+
+Keep the checked source URL and retrieval date beside each candidate. The Actor gathers evidence from static public responses. Validate the contract before implementing against it. For one website, the attempt fee is $0.002 and a qualifying report adds $0.005. [API Docs input](https://apify.com/changeable_peddler/api-docs-openapi-discovery/input-schema) · [Pricing](https://apify.com/changeable_peddler/api-docs-openapi-discovery/pricing)
+
 ## Research prices, hiring pages and newsroom sources
 
 Use these when preparing a comparison or research shortlist from a company's public pages.
