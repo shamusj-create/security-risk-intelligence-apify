@@ -1,5 +1,7 @@
 # Triage SEC filings for a public-company watchlist
 
+**Legacy documentation.** Active development ended on 26 November 2026. These instructions support existing integrations.
+
 Use [SEC Red Flag Monitor](https://apify.com/changeable_peddler/sec-red-flag-monitor) when an analyst needs to identify recent filings worth opening. It resolves a ticker or CIK and flags filing-type or item-code patterns such as late filings, non-reliance and executive changes. It returns a structured review row, not a conclusion that the company has done something wrong.
 
 ## Prepare one identified request

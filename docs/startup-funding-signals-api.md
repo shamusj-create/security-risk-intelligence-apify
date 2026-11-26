@@ -1,5 +1,7 @@
 # Investigate Form D and developer signals for a company domain
 
+**Legacy documentation.** Active development ended on 26 November 2026. These instructions support existing integrations.
+
 Use [Startup Funding Signal Report](https://apify.com/changeable_peddler/startup-funding-signal-report) to assemble public clues for a company-research queue. It searches for possible SEC Form D matches and can add available GitHub, Hacker News and domain-registration signals. A domain-derived name is a search starting point, not verified company identity.
 
 ## Check one company first

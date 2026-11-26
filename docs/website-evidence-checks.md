@@ -1,5 +1,7 @@
 # Choose a public website evidence check
 
+**Legacy documentation.** Active development ended on 26 November 2026. These instructions support existing integrations.
+
 Preparing a vendor review, SaaS comparison or company-research spreadsheet? Start with the question you need to answer and the public page most likely to contain that evidence. These eleven public Apify Actors cover different tasks. Select the one that fits your question, then inspect its sources before using the result in a decision.
 
 ## Review privacy policies and company identity

@@ -1,5 +1,7 @@
 # Sample outputs and worked examples
 
+**Legacy documentation.** Active development ended on 26 November 2026. These instructions support existing integrations.
+
 These shortened examples show selected fields from the three company/software Actors. They are illustrations for inspecting format before a paid run, not current assessments or customer case studies. The independent CQC product has a different schema in its [care-provider export guide](cqc-care-home-report-links-csv.md).
 
 Requesting fresh data can incur fees even when a source fails, so inspect current pricing and the completed run before you repeat it.

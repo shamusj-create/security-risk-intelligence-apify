@@ -1,5 +1,7 @@
 # Review pinned dependencies with an OSS supply-chain risk API
 
+**Legacy documentation.** Active development ended on 26 November 2026. These instructions support existing integrations.
+
 Use [OSS Supply Chain Risk Report](https://apify.com/changeable_peddler/oss-supply-chain-risk-report) to turn a supplied package version into a source-linked triage row. It combines available registry metadata with OSV vulnerability records and, optionally, NVD keyword matches. It accepts PyPI versions, npm lockfiles and supported SBOM package URLs; Dockerfile inputs lead to Docker Hub metadata checks, not scans of image layers.
 
 ## Start with one component

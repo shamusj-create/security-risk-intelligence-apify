@@ -1,5 +1,7 @@
 # Extract company career-page jobs and hiring signals for review
 
+**Legacy documentation.** Active development ended on 26 November 2026. These instructions support existing integrations.
+
 Preparing a recruiting-research spreadsheet from a list of company career pages? [Career Page Hiring Signal Extractor](https://apify.com/changeable_peddler/career-page-hiring-signal-extractor) returns role-like links and configured hiring-related mentions from fetched public pages. Use the source-linked candidates to decide which vacancies deserve a manual check.
 
 The output is a bounded snapshot. It is useful for a review shortlist; it does not provide a complete jobs feed, verify that a vacancy is still open or establish a company's growth, budget or buying intent.

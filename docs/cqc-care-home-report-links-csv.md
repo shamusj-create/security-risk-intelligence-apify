@@ -1,5 +1,7 @@
 # Export CQC care home and homecare report links to CSV
 
+**Legacy documentation.** Active development ended on 26 November 2026. These instructions support existing integrations.
+
 Use [CQC Report Finder](https://apify.com/changeable_peddler/cqc-report-finder) when you need a source-linked spreadsheet for a care-provider review in England. It gathers available report-publication dates and ratings, then groups matched care locations beneath their provider. You do not need a CQC API key or paid data subscription.
 
 The fee is **$0.01 per provider delivered, plus Apify platform usage**. Several matched locations belonging to one provider create one provider fee in that run. Empty results and source errors create no provider-report fee, but platform usage still applies. Free Apify accounts can use their normal platform allowance.

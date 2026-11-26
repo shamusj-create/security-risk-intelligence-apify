@@ -1,5 +1,7 @@
 # Choose a public-data check for a vendor review
 
+**Legacy documentation.** Active development ended on 26 November 2026. These instructions support existing integrations.
+
 A vendor review can involve several different questions. Choose the Actor that answers the one in front of you, rather than buying a compulsory suite.
 
 | Evidence you have | Next check | Read before running |

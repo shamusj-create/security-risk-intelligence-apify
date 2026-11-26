@@ -1,5 +1,7 @@
 # Hand off public-source findings for vendor review
 
+**Legacy documentation.** Active development ended on 26 November 2026. These instructions support existing integrations.
+
 Choose the relevant check from the [vendor research selector](vendor-risk-automation-with-apify.md), then export its dataset into your existing review queue. The three company/software Actors are independent tools; running all three is neither required nor always relevant.
 
 ## Make the record traceable
